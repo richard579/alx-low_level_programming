@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - _putchar
- *
+ * main - main function
  * is written by Richard
  * Return : 0
  */
