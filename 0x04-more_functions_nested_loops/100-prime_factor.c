@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <math.h>
+
 /**
  * main - finds and prints the largest prime factor of a number
+ *
  * Return: Always 0
  */
-
 int main(void)
 {
 	unsigned long int num = 612852475143;
