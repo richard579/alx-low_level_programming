@@ -7,21 +7,21 @@
 
 int main(void)
 {
-	long int num 612852475143;
-	int prime;
+	unsigned long int num = 612852475143;
+	unsigned long int prim;
 
-	for (prime = 2; prime <= sqrt(num); prime++)
+	prim = 3;
+	while (prim < num / 2)
 	{
-		/*int saved_prime;*/
-
-		if (num % prime == 0)
+		if ((num % prim) == 0)
 		{
-			/*saved_prime = prime;*/
-			num = num / prime;
-			prime = 1;
-			/* printf("%ld\n", num);*/
+			if((prim % 3) == 2)
+				printf(",%lu ", prim);
 		}
+
+		prim+=2;
 	}
-	printf("%ld\n", num);
+
+	putchar('\n');
 	return (0);
 }
