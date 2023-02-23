@@ -3,21 +3,22 @@
 /**
  * print_line - Draws a straight line in the terminal.
  * @n: number of times the character _ should be printed
+ * Return: 0
  */
 
 void print_line(int n)
 {
-	if (n <= 0)
-	{
-		_putchar('\n');
-	} else
-	{
-		int i;
+	int a = 0;
 
-		for (i = 1; i <= n; i++)
+	if (n > 0)
+	{
+		while (a <= n)
 		{
 			_putchar('_');
+			a++;
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
