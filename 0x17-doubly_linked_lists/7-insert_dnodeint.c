@@ -8,7 +8,7 @@
  * @n: data for the new node.
  * Return: the address of the new node, or NULL if it failed
  */
-dlistint_t *insert_dnodeint_at_index(dlistint-t **h, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *aux_node = *h, *new_node;
 	unsigned int index, cont = 0;
@@ -31,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint-t **h, unsigned int idx, int n)
 	}
 
 	/* search of position to insert */
-	inde = idx - 1;
+	index = idx - 1;
 	while (aux_node && cont != index)
 	{
 		cont++;
